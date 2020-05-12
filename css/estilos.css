@@ -1,11 +1,12 @@
 body{
   color: yellow;
-  background:black;
+  background:#363636;
   font-family: arial;
 }
 
 .menu{
-  background: #9962ff;
+  background: #FF8C00;
+
 }
 
 .menu ul{
@@ -14,7 +15,7 @@ body{
 }
 
 a{
-  color: red;
+  color: black;
   text-decoration:none;
 }
 
