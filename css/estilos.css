@@ -6,8 +6,8 @@
 }
 
 body {
-  color: yellow;
-  background: #363636;
+  color: #E3E7D3;
+  background: #1E2D24;
   font-family: 'Ubuntu Mono', monospace;
   height: 100 vh;
   font-size: 10px;
@@ -34,7 +34,7 @@ header {
 }
 
 .menu {
-  background: #FF8C00;
+  background: #EC7505;
   position: fixed;
   width: 100vw;
   top: 0;
@@ -47,7 +47,7 @@ header {
 }
 
 .menu a:hover{
-  background-color:  #363636;
+  background-color:  #1E2D24;
   color: whitesmoke;
 }
 
@@ -117,7 +117,9 @@ a:hover {
   } 
 }
 
-
+.portfolio {
+  background-color: #40798C;
+}
 
 .sobre h2,
 .contato h2,
@@ -135,7 +137,7 @@ a:hover {
 }
 
 .sobre a {
-  color: green;
+  color: #7CFC00;
 }
 
 .portfolio .grid{
@@ -171,17 +173,46 @@ a:hover {
 } 
 
 .img-portfolio {
-  width: 240px;
+  width: 100%;
   height: 180px;
   object-fit: cover;
   object-position: left bottom;
   transition: transform 500ms;
 }
 
-.img-portfolio:hover{
+/*.img-portfolio:hover{
     transform: scale(1.5);
+}*/
+
+.flip-card{
+  perspective: 1000px;
+
 }
 
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+
+}
+.flip-card:hover .card{
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back{
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.card-back {
+
+  background-color: white;
+  width: 100%;
+  height: 180px;
+  transform: rotateY(180deg);
+}
 .contato .icon{
   text-align: center;
 }
@@ -210,5 +241,5 @@ a:hover {
 
 .sobre .avatar img{
   border-radius: 50%
-
 }
+
