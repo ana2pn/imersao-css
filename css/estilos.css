@@ -7,8 +7,8 @@
 
 body {
   color: #E3E7D3;
-  background: #1E2D24;
-  font-family: 'Ubuntu Mono', monospace;
+  background: #6e182b;
+  font-family: 'Heebo', monospace;
   height: 100 vh;
   font-size: 10px;
 }
@@ -72,13 +72,9 @@ a:hover {
 }
 
 @keyframes animacaoTitulo{
-  0% {
-
-  }
   100%{
   transform: scale(1) translateY(0vh);
   opacity: 1;
-
   }
 }
 
@@ -124,7 +120,6 @@ a:hover {
 .sobre h2,
 .contato h2,
 .portfolio h2 {
-  /*font-family: 'Cabin', sans-serif; */
   margin-bottom: 2em;
   font-size: 2em;
 }
@@ -143,7 +138,6 @@ a:hover {
 .portfolio .grid{
   display: grid;
   grid-gap: 2em;
-  
 }
 
 @media(min-width: 560px){
@@ -155,7 +149,7 @@ a:hover {
 @media(min-width: 880px){
   .portfolio .grid{
       grid-template-columns: repeat(3,260px);
-      align-content: : center;
+      align-content: center;
       justify-content: center;
       height: calc(100vh - 4em - 48px - 1.5em);
   }
@@ -180,13 +174,12 @@ a:hover {
   transition: transform 500ms;
 }
 
-/*.img-portfolio:hover{
+.img-portfolio:hover{
     transform: scale(1.5);
-}*/
+}
 
 .flip-card{
   perspective: 1000px;
-
 }
 
 .card {
@@ -195,9 +188,9 @@ a:hover {
   transition: transform 1s;
 
 }
-.flip-card:hover .card{
+/* .flip-card:hover .card{
   transform: rotateY(180deg);
-}
+} */
 
 .card-front, .card-back{
   backface-visibility: hidden;
@@ -207,7 +200,6 @@ a:hover {
 }
 
 .card-back {
-
   background-color: white;
   width: 100%;
   height: 180px;
@@ -242,4 +234,3 @@ a:hover {
 .sobre .avatar img{
   border-radius: 50%
 }
-
